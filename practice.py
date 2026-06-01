@@ -3,6 +3,13 @@
 print('Super Word Counter 3000')
 user_input = input('Please type in your text: ')
 
+def clear_text(input):
+    input = text.lower()
+    chars = ",.!|?;:\"'()[]{}"
+    for char in chars:
+        text = text.replace(char, "")
+    return input
+
 def counter(input):
     try:
         counter = 0
