@@ -23,3 +23,19 @@ while True:
     else:
         vowel_counter(user_input)
         break
+
+# Optimized IA code:
+
+# def vowel_counter(text):
+#     count = sum(1 for char in text.lower() if char in 'aeiou')
+#     print(f'You have {count} vowels in your text.')
+
+# print('Vowel Counter')
+
+# while True:
+#     user_input = input('Type in your text: ').strip()
+#     if not user_input:
+#         print('Please enter a valid text. Try again.\n')
+#     else:
+#         vowel_counter(user_input)
+#         break
