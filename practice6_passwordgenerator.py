@@ -19,3 +19,13 @@ while len(result) < password_length:
     result.append(random.choice(valid_chars))
 
 print(''.join(result))
+
+# Optimized IA code:
+
+# import string
+# import random
+
+# valid_chars = string.ascii_letters + string.digits + string.punctuation
+
+# password = ''.join(random.choices(valid_chars, k=12))
+# print(password)
