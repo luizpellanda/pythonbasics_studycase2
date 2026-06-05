@@ -16,7 +16,7 @@
 import random
 
 secret_number = random.randint(1, 100)
-tries = 0
+tries = 1
 
 print('Super Guessing Game - Number Edition!')
 
@@ -30,13 +30,13 @@ while True: #the code needs to repeat until it reaches the last else and then br
         continue
 
     if guess > secret_number:
-        print('Too high! Try again.\n')
-        print(f'You did {tries} tries.')
+        print('\nToo high! Try again.')
+        print(f'You did {tries} tries.\n')
         tries += 1
     elif guess < secret_number:
-        print('Too low! Try again.\n')
-        print(f'You did {tries} tries.')
+        print('\nToo low! Try again.')
+        print(f'You did {tries} tries.\n')
         tries += 1
     else:
-        print(f'YOU GOT IT after {tries} tries! The secret number was {secret_number}!')
+        print(f'\nYOU GOT IT after {tries} tries! The secret number was {secret_number}!\n')
         break
